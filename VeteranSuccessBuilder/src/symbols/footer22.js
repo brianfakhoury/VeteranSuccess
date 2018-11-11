@@ -43,13 +43,18 @@ export default class footer22 extends Component {
         <TouchableOpacity
           style={styles.buttonWrapper2}
           onPress={() => {
-            this.props.navigation.pop();
+            this.props.navigation.push("Finances");
           }}
         >
           <Icon style={styles.icon2} name="library-books" />
           <Text style={styles.content2}>Finances</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.buttonWrapper3}>
+        <TouchableOpacity
+          style={styles.buttonWrapper3}
+          onPress={() => {
+            this.props.navigation.push("Career");
+          }}
+        >
           <Icon style={styles.icon3} name="poll" />
           <Text style={styles.content3}>Career</Text>
         </TouchableOpacity>
@@ -66,7 +71,12 @@ export default class footer22 extends Component {
           />
           <Text style={styles.content1}>Fun</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.buttonWrapper4}>
+        <TouchableOpacity
+          style={styles.buttonWrapper4}
+          onPress={() => {
+            this.props.navigation.push("Love");
+          }}
+        >
           <Icon style={styles.icon4} name="ios-heart-outline" type="Ionicons" />
           <Text style={styles.content4}>Love</Text>
         </TouchableOpacity>

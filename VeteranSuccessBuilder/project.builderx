@@ -5,7 +5,10 @@
         "/src/screens/SignUp.js",
         "/src/screens/Entertainment.js",
         "/src/screens/Car.js",
-        "/src/screens/House.js"
+        "/src/screens/House.js",
+        "/src/screens/Finances.js",
+        "/src/screens/Career.js",
+        "/src/screens/Love.js"
     ],
     "symbols": [
         "/src/symbols/Buttonlogin.js",

@@ -30,7 +30,7 @@ export default class Untitled3 extends Component {
     };
   }
   componentWillMount() {
-    fetch("http://550af917.ngrok.io/api/v1/gyphy-images/home").then(data => {
+    fetch("http://550af917.ngrok.io/api/v1/gyphy-images/looking").then(data => {
       data.json().then(url => {
         console.log(url);
         this.setState({
@@ -38,7 +38,7 @@ export default class Untitled3 extends Component {
         });
       });
     });
-    fetch("http://550af917.ngrok.io/api/v1/gyphy-images/car").then(data => {
+    fetch("http://550af917.ngrok.io/api/v1/gyphy-images/ladder").then(data => {
       data.json().then(url => {
         console.log(url);
         this.setState({
@@ -84,48 +84,46 @@ export default class Untitled3 extends Component {
                 }}
               />
             </Center>
-            <Text
-              style={styles.text}
-              allowFontScaling={false}
-              numberOfLines={2}
-            >
-              Personal Life
-            </Text>
+            <Center vertical>
+              <Text style={styles.text} allowFontScaling={false}>
+                Career Development
+              </Text>
+            </Center>
           </View>
           <View style={styles.rect4}>
-            <TouchableOpacity
-              style={styles.button2}
+            <View
+              style={styles.rect8}
               onPress={() => {
                 this.props.navigation.push("House");
               }}
             >
               <View style={styles.rect5}>
                 <Text style={styles.text2} numberOfLines={2}>
-                  A safe, quiet home is essential for a good life experience.
+                  Some are happy where they are at, but it's always an option to
+                  go bigger
                 </Text>
                 <Text style={styles.text3} numberOfLines={2}>
-                  Find a good, safe home
+                  Advance your position
                 </Text>
                 {this.renderImage(0)}
               </View>
-            </TouchableOpacity>
-            <TouchableOpacity
-              style={styles.button3}
+            </View>
+            <View
+              style={styles.rect9}
               onPress={() => {
                 this.props.navigation.push("Car");
               }}
             >
               <View style={styles.rect6}>
                 <Text style={styles.text4} numberOfLines={2}>
-                  A good car, or ride-sharing option, is important for being on
-                  time and available.
+                  A career that gives you purpose is essential for a good life.
                 </Text>
                 <Text style={styles.text5} numberOfLines={2}>
-                  Get reliable transportation
+                  Find the right career
                 </Text>
                 {this.renderImage(1)}
               </View>
-            </TouchableOpacity>
+            </View>
           </View>
         </ScrollView>
         <Footer22 style={styles.footer22} navigation={this.props.navigation} />
@@ -170,7 +168,7 @@ const styles = StyleSheet.create({
     width: 375,
     height: 950
   },
-  button2: {
+  rect8: {
     width: 310,
     height: 400,
     elevation: 60,
@@ -250,7 +248,7 @@ const styles = StyleSheet.create({
     height: 1141,
     width: 375
   },
-  button3: {
+  rect9: {
     width: 310,
     height: 400,
     elevation: 60,
@@ -341,12 +339,11 @@ const styles = StyleSheet.create({
   },
   text: {
     left: 40,
-    width: 147,
+    width: 181,
     height: 77,
     position: "absolute",
     backgroundColor: "transparent",
-    fontSize: 32,
-    top: "19.8%"
+    fontSize: 32
   },
   icon: {
     left: 290,

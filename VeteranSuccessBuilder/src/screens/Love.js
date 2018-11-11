@@ -11,7 +11,7 @@ import {
   Image
 } from "react-native";
 
-export default class Entertainment extends Component {
+export default class Love extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -94,11 +94,11 @@ export default class Entertainment extends Component {
           contentContainerStyle={styles.ScrollView8}
         >
           <Text style={styles.text5} numberOfLines={2}>
-            Fun Stuff Around You
+            Love Life
           </Text>
           <Icon
             style={styles.icon}
-            name="account-circle"
+            name="heart"
             type="MaterialCommunityIcons"
             onPress={() => {
               this.props.navigation.push("Login");
@@ -135,7 +135,7 @@ export default class Entertainment extends Component {
                 </View>
               </TouchableOpacity>
             </ScrollView>
-            <Text style={styles.text25}>Live Music</Text>
+            <Text style={styles.text25}>Date Night</Text>
           </View>
           <View style={styles.rect23}>
             <ScrollView
@@ -152,7 +152,7 @@ export default class Entertainment extends Component {
                     A safe, quiet home is essential for a good life experience.
                   </Text>
                   <Text style={styles.text27} numberOfLines={2}>
-                    Find a good, safe home
+                    Get the Best Tips and Tricks
                   </Text>
                   {this.renderImage(1)}
                 </View>
@@ -169,7 +169,7 @@ export default class Entertainment extends Component {
                 </View>
               </TouchableOpacity>
             </ScrollView>
-            <Text style={styles.text30}>Sporting Events</Text>
+            <Text style={styles.text30}>Still Looking</Text>
           </View>
         </ScrollView>
         <Footer22 style={styles.footer22} navigation={this.props.navigation} />
@@ -197,15 +197,15 @@ const styles = StyleSheet.create({
     position: "absolute",
     backgroundColor: "transparent",
     fontSize: 32,
-    left: "10.67%",
-    width: 200
+    left: "10.93%",
+    width: 119
   },
   icon: {
     top: 36,
     left: 280,
     position: "absolute",
     backgroundColor: "transparent",
-    color: "grey",
+    color: "rgba(208,2,27,1)",
     fontSize: 40
   },
   footer22: {
@@ -223,15 +223,6 @@ const styles = StyleSheet.create({
   ScrollView2: {
     height: 470,
     width: 739
-  },
-
-  image: {
-    top: -2,
-    left: 0,
-    width: 310,
-    height: 201,
-    position: "absolute",
-    borderRadius: 0
   },
 
   ScrollView3: {
@@ -298,6 +289,14 @@ const styles = StyleSheet.create({
     shadowOpacity: 1,
     shadowRadius: 20,
     overflow: "visible"
+  },
+  image: {
+    top: -2,
+    left: 0,
+    width: 310,
+    height: 201,
+    position: "absolute",
+    borderRadius: 0
   },
   rect21: {
     top: 0,
@@ -405,8 +404,8 @@ const styles = StyleSheet.create({
   text25: {
     top: 0,
     left: 40,
-    width: 70,
-    height: 20,
+    width: 90,
+    height: 21,
     position: "absolute",
     backgroundColor: "transparent",
     color: "rgba(74,144,226,1)"
@@ -569,7 +568,7 @@ const styles = StyleSheet.create({
     color: "rgba(74,144,226,1)"
   },
   ScrollView8: {
-    height: 1111,
+    height: 1112,
     width: 375
   }
 });

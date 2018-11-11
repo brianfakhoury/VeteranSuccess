@@ -15,6 +15,9 @@ import Entertainment from "./src/screens/Entertainment";
 
 import Car from "./src/screens/Car";
 import House from "./src/screens/House";
+import Finances from "./src/screens/Finances";
+import Career from "./src/screens/Career";
+import Love from "./src/screens/Love";
 import { StackNavigator, DrawerNavigator } from "react-navigation";
 let user = [
   {
@@ -45,6 +48,15 @@ const DrawerNavigation = DrawerNavigator({
   },
   House: {
     screen: House
+  },
+  Finances: {
+    screen: Finances
+  },
+  Career: {
+    screen: Career
+  },
+  Love: {
+    screen: Love
   }
 });
 const StackNavigation = StackNavigator(
@@ -69,6 +81,15 @@ const StackNavigation = StackNavigator(
     },
     House: {
       screen: House
+    },
+    Finances: {
+      screen: Finances
+    },
+    Career: {
+      screen: Career
+    },
+    Love: {
+      screen: Love
     }
   },
   {
