@@ -10,7 +10,8 @@ import {
   TouchableOpacity,
   Alert,
   StatusBar,
-  ImageBackground
+  ImageBackground,
+  Image
 } from "react-native";
 
 import { connect } from "react-redux";
@@ -114,6 +115,21 @@ class Login extends Component {
             }}
           />
         </Center>
+        <Center horizontal>
+          <Text style={styles.text3}>Built With:</Text>
+        </Center>
+        <Image
+          source={require("../assets/1_eSQnSxgOwNWtjsnbBl3w4A.png")}
+          style={styles.image}
+        />
+        <Image
+          source={require("../assets/5842a962a6515b1e0ad75b04.png")}
+          style={styles.image2}
+        />
+        <Image
+          source={require("../assets/cfe32a47d61a3b280904d41dd1eb5d1f.png")}
+          style={styles.image3}
+        />
       </View>
     );
   }
@@ -224,5 +240,35 @@ const styles = StyleSheet.create({
         rotate: "-179.55deg"
       }
     ]
+  },
+  text3: {
+    height: 20,
+    width: 100,
+    top: 510,
+    position: "absolute",
+    backgroundColor: "transparent",
+    textAlign: "center",
+    color: "rgba(133,133,133,1)"
+  },
+  image: {
+    height: 60,
+    width: 140,
+    position: "absolute",
+    left: "13.33%",
+    top: "65.27%"
+  },
+  image2: {
+    height: 31,
+    width: 148,
+    position: "absolute",
+    top: "73.89%",
+    left: "29.87%"
+  },
+  image3: {
+    height: 43,
+    width: 147,
+    position: "absolute",
+    top: "66.32%",
+    left: "48%"
   }
 });

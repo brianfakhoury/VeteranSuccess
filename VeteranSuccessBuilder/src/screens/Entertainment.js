@@ -19,58 +19,64 @@ export default class Entertainment extends Component {
     };
   }
   componentWillMount() {
-    fetch("http://550af917.ngrok.io/api/v1/gyphy-images/looking").then(data => {
-      data.json().then(url => {
-        console.log(url);
-        this.setState({
-          imgsrc: [
-            url,
-            this.state.imgsrc[1],
-            this.state.imgsrc[2],
-            this.state.imgsrc[3]
-          ]
+    fetch("http://550af917.ngrok.io/api/v1/gyphy-images/football").then(
+      data => {
+        data.json().then(url => {
+          console.log(url);
+          this.setState({
+            imgsrc: [
+              url,
+              this.state.imgsrc[1],
+              this.state.imgsrc[2],
+              this.state.imgsrc[3]
+            ]
+          });
         });
-      });
-    });
-    fetch("http://550af917.ngrok.io/api/v1/gyphy-images/ladder").then(data => {
-      data.json().then(url => {
-        console.log(url);
-        this.setState({
-          imgsrc: [
-            this.state.imgsrc[0],
-            url,
-            this.state.imgsrc[2],
-            this.state.imgsrc[3]
-          ]
+      }
+    );
+    fetch("http://550af917.ngrok.io/api/v1/gyphy-images/basketball").then(
+      data => {
+        data.json().then(url => {
+          console.log(url);
+          this.setState({
+            imgsrc: [
+              this.state.imgsrc[0],
+              url,
+              this.state.imgsrc[2],
+              this.state.imgsrc[3]
+            ]
+          });
         });
-      });
-    });
-    fetch("http://550af917.ngrok.io/api/v1/gyphy-images/ladder").then(data => {
-      data.json().then(url => {
-        console.log(url);
-        this.setState({
-          imgsrc: [
-            this.state.imgsrc[0],
-            this.state.imgsrc[1],
-            url,
-            this.state.imgsrc[3]
-          ]
-        });
-      });
-    });
-    fetch("http://550af917.ngrok.io/api/v1/gyphy-images/ladder").then(data => {
+      }
+    );
+    fetch("http://550af917.ngrok.io/api/v1/gyphy-images/singer").then(data => {
       data.json().then(url => {
         console.log(url);
         this.setState({
           imgsrc: [
             this.state.imgsrc[0],
             this.state.imgsrc[1],
-            this.state.imgsrc[2],
-            url
+            url,
+            this.state.imgsrc[3]
           ]
         });
       });
     });
+    fetch("http://550af917.ngrok.io/api/v1/gyphy-images/festival").then(
+      data => {
+        data.json().then(url => {
+          console.log(url);
+          this.setState({
+            imgsrc: [
+              this.state.imgsrc[0],
+              this.state.imgsrc[1],
+              this.state.imgsrc[2],
+              url
+            ]
+          });
+        });
+      }
+    );
   }
 
   renderImage(i) {
@@ -113,11 +119,11 @@ export default class Entertainment extends Component {
               <TouchableOpacity style={styles.button5}>
                 <View style={styles.rect21}>
                   <Text style={styles.text21} numberOfLines={2}>
-                    A safe, quiet home is essential for a good life\n
-                    experience.
+                    Be basic and enjoy the nuances of life, like loud music and
+                    way too many people.
                   </Text>
                   <Text style={styles.text22} numberOfLines={2}>
-                    Find a good, safe home
+                    Big festivals this weekend
                   </Text>
                   {this.renderImage(3)}
                 </View>
@@ -125,11 +131,11 @@ export default class Entertainment extends Component {
               <TouchableOpacity style={styles.button6}>
                 <View style={styles.rect22}>
                   <Text style={styles.text23} numberOfLines={2}>
-                    A safe, quiet home is essential for a good life\n
-                    experience.
+                    So and so is the best of the best and you don't want to miss
+                    them.
                   </Text>
                   <Text style={styles.text24} numberOfLines={2}>
-                    Find a good, safe home
+                    A generic great singer
                   </Text>
                   {this.renderImage(2)}
                 </View>
@@ -149,10 +155,10 @@ export default class Entertainment extends Component {
               <TouchableOpacity style={styles.button7}>
                 <View style={styles.rect24}>
                   <Text style={styles.text26} numberOfLines={2}>
-                    A safe, quiet home is essential for a good life experience.
+                    Get great seats, find what's fun, and get out there.
                   </Text>
                   <Text style={styles.text27} numberOfLines={2}>
-                    Find a good, safe home
+                    Basketball games this weekend
                   </Text>
                   {this.renderImage(1)}
                 </View>
@@ -160,10 +166,11 @@ export default class Entertainment extends Component {
               <TouchableOpacity style={styles.button8}>
                 <View style={styles.rect25}>
                   <Text style={styles.text28} numberOfLines={2}>
-                    A safe, quiet home is essential for a good life experience.
+                    Find and attend tailgates, watch the game, and find the
+                    after-party.
                   </Text>
                   <Text style={styles.text29} numberOfLines={2}>
-                    Find a good, safe home
+                    Football games this weekend
                   </Text>
                   {this.renderImage(0)}
                 </View>

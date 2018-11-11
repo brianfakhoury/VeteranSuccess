@@ -19,7 +19,7 @@ export default class Love extends Component {
     };
   }
   componentWillMount() {
-    fetch("http://550af917.ngrok.io/api/v1/gyphy-images/looking").then(data => {
+    fetch("http://550af917.ngrok.io/api/v1/gyphy-images/bars").then(data => {
       data.json().then(url => {
         console.log(url);
         this.setState({
@@ -32,20 +32,22 @@ export default class Love extends Component {
         });
       });
     });
-    fetch("http://550af917.ngrok.io/api/v1/gyphy-images/ladder").then(data => {
-      data.json().then(url => {
-        console.log(url);
-        this.setState({
-          imgsrc: [
-            this.state.imgsrc[0],
-            url,
-            this.state.imgsrc[2],
-            this.state.imgsrc[3]
-          ]
+    fetch("http://550af917.ngrok.io/api/v1/gyphy-images/handsome").then(
+      data => {
+        data.json().then(url => {
+          console.log(url);
+          this.setState({
+            imgsrc: [
+              this.state.imgsrc[0],
+              url,
+              this.state.imgsrc[2],
+              this.state.imgsrc[3]
+            ]
+          });
         });
-      });
-    });
-    fetch("http://550af917.ngrok.io/api/v1/gyphy-images/ladder").then(data => {
+      }
+    );
+    fetch("http://550af917.ngrok.io/api/v1/gyphy-images/lovers").then(data => {
       data.json().then(url => {
         console.log(url);
         this.setState({
@@ -58,7 +60,7 @@ export default class Love extends Component {
         });
       });
     });
-    fetch("http://550af917.ngrok.io/api/v1/gyphy-images/ladder").then(data => {
+    fetch("http://550af917.ngrok.io/api/v1/gyphy-images/gifts").then(data => {
       data.json().then(url => {
         console.log(url);
         this.setState({
@@ -113,11 +115,11 @@ export default class Love extends Component {
               <TouchableOpacity style={styles.button5}>
                 <View style={styles.rect21}>
                   <Text style={styles.text21} numberOfLines={2}>
-                    A safe, quiet home is essential for a good life\n
-                    experience.
+                    A gift doesn't have to be material, as long as it is
+                    thoughtful.
                   </Text>
                   <Text style={styles.text22} numberOfLines={2}>
-                    Find a good, safe home
+                    Gifts, what to get them
                   </Text>
                   {this.renderImage(3)}
                 </View>
@@ -125,11 +127,11 @@ export default class Love extends Component {
               <TouchableOpacity style={styles.button6}>
                 <View style={styles.rect22}>
                   <Text style={styles.text23} numberOfLines={2}>
-                    A safe, quiet home is essential for a good life\n
-                    experience.
+                    A healthy relationship is also about what you do together.
+                    Find those meaningful experiences.
                   </Text>
                   <Text style={styles.text24} numberOfLines={2}>
-                    Find a good, safe home
+                    Find the perfect event
                   </Text>
                   {this.renderImage(2)}
                 </View>
@@ -149,7 +151,8 @@ export default class Love extends Component {
               <TouchableOpacity style={styles.button7}>
                 <View style={styles.rect24}>
                   <Text style={styles.text26} numberOfLines={2}>
-                    A safe, quiet home is essential for a good life experience.
+                    It's important to maximize your chances by exemplifying
+                    yourself and learning what works.
                   </Text>
                   <Text style={styles.text27} numberOfLines={2}>
                     Get the Best Tips and Tricks
@@ -160,10 +163,11 @@ export default class Love extends Component {
               <TouchableOpacity style={styles.button8}>
                 <View style={styles.rect25}>
                   <Text style={styles.text28} numberOfLines={2}>
-                    A safe, quiet home is essential for a good life experience.
+                    Ever heard of "Right place, right time"? Maximize your
+                    opportunity by learning about events.
                   </Text>
                   <Text style={styles.text29} numberOfLines={2}>
-                    Find a good, safe home
+                    Good places to be
                   </Text>
                   {this.renderImage(0)}
                 </View>
