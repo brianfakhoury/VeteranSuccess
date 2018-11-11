@@ -178,13 +178,13 @@ const styles = StyleSheet.create({
   },
 
   text: {
-    top: "12.32%",
+    top: "12.44%",
     position: "absolute",
     backgroundColor: "transparent",
     fontStyle: "italic",
     fontSize: 90,
     color: "rgba(80,80,80,1)",
-    left: 0
+    left: 10
   },
   username2: {
     left: "0%",
@@ -203,8 +203,9 @@ const styles = StyleSheet.create({
     fontSize: 90,
     fontStyle: "italic",
     color: "rgba(50,150,210,1)",
-    left: "0%",
-    width: 371
+
+    width: 361,
+    left: "2.67%"
   },
   statusBar: {},
   button1: {

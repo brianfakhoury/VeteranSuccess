@@ -25,6 +25,9 @@ export default class Entertainment extends Component {
             style={styles.icon}
             name="account-circle"
             type="MaterialCommunityIcons"
+            onPress={() => {
+              this.props.navigation.push("Login");
+            }}
           />
           <View style={styles.rect19} horizontal={true}>
             <ScrollView
@@ -69,27 +72,25 @@ export default class Entertainment extends Component {
               <TouchableOpacity style={styles.button7}>
                 <View style={styles.rect24}>
                   <Text style={styles.text26} numberOfLines={2}>
-                    \n \n \n A safe, quiet home is essential for a good life\n\n
-                    experience.\n{" "}
+                    A safe, quiet home is essential for a good life experience.
                   </Text>
                   <Text style={styles.text27} numberOfLines={2}>
-                    \n \n \n Find a good, safe home\n{" "}
+                    Find a good, safe home
                   </Text>
                 </View>
               </TouchableOpacity>
               <TouchableOpacity style={styles.button8}>
                 <View style={styles.rect25}>
                   <Text style={styles.text28} numberOfLines={2}>
-                    \n \n \n A safe, quiet home is essential for a good life\n\n
-                    experience.\n{" "}
+                    A safe, quiet home is essential for a good life experience.
                   </Text>
                   <Text style={styles.text29} numberOfLines={2}>
-                    \n \n \n Find a good, safe home\n{" "}
+                    Find a good, safe home
                   </Text>
                 </View>
               </TouchableOpacity>
             </ScrollView>
-            <Text style={styles.text30}>Live Music</Text>
+            <Text style={styles.text30}>Sporting Events</Text>
           </View>
         </ScrollView>
         <Footer22 style={styles.footer22} navigation={this.props.navigation} />
@@ -473,7 +474,7 @@ const styles = StyleSheet.create({
   text30: {
     top: 0,
     left: 40,
-    width: 70,
+    width: 120,
     height: 20,
     position: "absolute",
     backgroundColor: "transparent",

@@ -16,7 +16,6 @@ export default class Car extends Component {
     super(props);
     var loading =
       "https://mir-s3-cdn-cf.behance.net/project_modules/disp/585d0331234507.564a1d239ac5e.gif";
-    console.log(typeof loading);
     this.state = {
       imgsrc: Array(10).fill(loading),
       imgtxt: Array(10).fill("Loading..."),
@@ -62,129 +61,138 @@ export default class Car extends Component {
       <View style={styles.root}>
         <StatusBar barStyle="dark-content" style={styles.statusBar} />
         <ScrollView style={styles.scrollArea}>
-          <Text style={styles.text2}>
-            According to LibertyMutual data, these cars are the best in terms of
-            cost of ownsership:
-          </Text>
-          <CupertinoSwitch
-            style={styles.cupertinoSwitch}
-            value={this.state.switch}
-          />
+          {this.state.switch ? (
+            <Text style={styles.text2}>Congrats!</Text>
+          ) : (
+            <Text style={styles.text2}>
+              According to LibertyMutual data, these cars are the best in terms
+              of cost of ownsership:
+            </Text>
+          )}
           <Text style={styles.text} numberOfLines={3} allowFontScaling={false}>
             Do you have a car or reliable method of transport?
           </Text>
-          <View style={styles.rect35}>
-            <View style={styles.rect11}>
-              <View style={styles.rect}>
-                <Image
-                  style={styles.image}
-                  source={{ uri: this.state.imgsrc[0] }}
-                />
-                <Text style={styles.text3}>{this.state.imgtxt[0]}</Text>
-                <Text style={styles.text4}>Rating:</Text>
-                <Text style={styles.text5}>{this.state.imgrate[0]}</Text>
+          {this.state.switch || (
+            <View style={styles.rect35}>
+              <View style={styles.rect11}>
+                <View style={styles.rect}>
+                  <Image
+                    style={styles.image}
+                    source={{ uri: this.state.imgsrc[0] }}
+                  />
+                  <Text style={styles.text3}>{this.state.imgtxt[0]}</Text>
+                  <Text style={styles.text4}>Rating:</Text>
+                  <Text style={styles.text5}>{this.state.imgrate[0]}</Text>
+                </View>
+              </View>
+              <View style={styles.rect36}>
+                <View style={styles.rect37}>
+                  <Image
+                    style={styles.image2}
+                    source={{ uri: this.state.imgsrc[1] }}
+                  />
+                  <Text style={styles.text6}>{this.state.imgtxt[1]}</Text>
+                  <Text style={styles.text7}>Rating:</Text>
+                  <Text style={styles.text8}>{this.state.imgrate[1]}</Text>
+                </View>
+              </View>
+              <View style={styles.rect38}>
+                <View style={styles.rect39}>
+                  <Image
+                    style={styles.image3}
+                    source={{ uri: this.state.imgsrc[2] }}
+                  />
+                  <Text style={styles.text9}>{this.state.imgtxt[2]}</Text>
+                  <Text style={styles.text10}>Rating:</Text>
+                  <Text style={styles.text11}>{this.state.imgrate[2]}</Text>
+                </View>
+              </View>
+              <View style={styles.rect40}>
+                <View style={styles.rect41}>
+                  <Image
+                    style={styles.image4}
+                    source={{ uri: this.state.imgsrc[3] }}
+                  />
+                  <Text style={styles.text12}>{this.state.imgtxt[3]}</Text>
+                  <Text style={styles.text13}>Rating:</Text>
+                  <Text style={styles.text14}>{this.state.imgrate[3]}</Text>
+                </View>
+              </View>
+              <View style={styles.rect42}>
+                <View style={styles.rect43}>
+                  <Image
+                    style={styles.image5}
+                    source={{ uri: this.state.imgsrc[4] }}
+                  />
+                  <Text style={styles.text15}>{this.state.imgtxt[4]}</Text>
+                  <Text style={styles.text16}>Rating:</Text>
+                  <Text style={styles.text17}>{this.state.imgrate[4]}</Text>
+                </View>
+              </View>
+              <View style={styles.rect44}>
+                <View style={styles.rect45}>
+                  <Image
+                    style={styles.image6}
+                    source={{ uri: this.state.imgsrc[5] }}
+                  />
+                  <Text style={styles.text18}>{this.state.imgtxt[5]}</Text>
+                  <Text style={styles.text19}>Rating:</Text>
+                  <Text style={styles.text20}>{this.state.imgrate[5]}</Text>
+                </View>
+              </View>
+              <View style={styles.rect46}>
+                <View style={styles.rect47}>
+                  <Image
+                    style={styles.image7}
+                    source={{ uri: this.state.imgsrc[6] }}
+                  />
+                  <Text style={styles.text21}>{this.state.imgtxt[6]}</Text>
+                  <Text style={styles.text22}>Rating:</Text>
+                  <Text style={styles.text23}>{this.state.imgrate[6]}</Text>
+                </View>
+              </View>
+              <View style={styles.rect48}>
+                <View style={styles.rect49}>
+                  <Image
+                    style={styles.image8}
+                    source={{ uri: this.state.imgsrc[7] }}
+                  />
+                  <Text style={styles.text24}>{this.state.imgtxt[7]}</Text>
+                  <Text style={styles.text25}>Rating:</Text>
+                  <Text style={styles.text26}>{this.state.imgrate[7]}</Text>
+                </View>
+              </View>
+              <View style={styles.rect50}>
+                <View style={styles.rect51}>
+                  <Image
+                    style={styles.image9}
+                    source={{ uri: this.state.imgsrc[8] }}
+                  />
+                  <Text style={styles.text27}>{this.state.imgtxt[8]}</Text>
+                  <Text style={styles.text28}>Rating:</Text>
+                  <Text style={styles.text29}>{this.state.imgrate[8]}</Text>
+                </View>
+              </View>
+              <View style={styles.rect52}>
+                <View style={styles.rect53}>
+                  <Image
+                    style={styles.image10}
+                    source={{ uri: this.state.imgsrc[9] }}
+                  />
+                  <Text style={styles.text30}>{this.state.imgtxt[9]}</Text>
+                  <Text style={styles.text31}>Rating:</Text>
+                  <Text style={styles.text32}>{this.state.imgrate[9]}</Text>
+                </View>
               </View>
             </View>
-            <View style={styles.rect36}>
-              <View style={styles.rect37}>
-                <Image
-                  style={styles.image2}
-                  source={{ uri: this.state.imgsrc[1] }}
-                />
-                <Text style={styles.text6}>{this.state.imgtxt[1]}</Text>
-                <Text style={styles.text7}>Rating:</Text>
-                <Text style={styles.text8}>{this.state.imgrate[1]}</Text>
-              </View>
-            </View>
-            <View style={styles.rect38}>
-              <View style={styles.rect39}>
-                <Image
-                  style={styles.image3}
-                  source={{ uri: this.state.imgsrc[2] }}
-                />
-                <Text style={styles.text9}>{this.state.imgtxt[2]}</Text>
-                <Text style={styles.text10}>Rating:</Text>
-                <Text style={styles.text11}>{this.state.imgrate[2]}</Text>
-              </View>
-            </View>
-            <View style={styles.rect40}>
-              <View style={styles.rect41}>
-                <Image
-                  style={styles.image4}
-                  source={{ uri: this.state.imgsrc[3] }}
-                />
-                <Text style={styles.text12}>{this.state.imgtxt[3]}</Text>
-                <Text style={styles.text13}>Rating:</Text>
-                <Text style={styles.text14}>{this.state.imgrate[3]}</Text>
-              </View>
-            </View>
-            <View style={styles.rect42}>
-              <View style={styles.rect43}>
-                <Image
-                  style={styles.image5}
-                  source={{ uri: this.state.imgsrc[4] }}
-                />
-                <Text style={styles.text15}>{this.state.imgtxt[4]}</Text>
-                <Text style={styles.text16}>Rating:</Text>
-                <Text style={styles.text17}>{this.state.imgrate[4]}</Text>
-              </View>
-            </View>
-            <View style={styles.rect44}>
-              <View style={styles.rect45}>
-                <Image
-                  style={styles.image6}
-                  source={{ uri: this.state.imgsrc[5] }}
-                />
-                <Text style={styles.text18}>{this.state.imgtxt[5]}</Text>
-                <Text style={styles.text19}>Rating:</Text>
-                <Text style={styles.text20}>{this.state.imgrate[5]}</Text>
-              </View>
-            </View>
-            <View style={styles.rect46}>
-              <View style={styles.rect47}>
-                <Image
-                  style={styles.image7}
-                  source={{ uri: this.state.imgsrc[6] }}
-                />
-                <Text style={styles.text21}>{this.state.imgtxt[6]}</Text>
-                <Text style={styles.text22}>Rating:</Text>
-                <Text style={styles.text23}>{this.state.imgrate[6]}</Text>
-              </View>
-            </View>
-            <View style={styles.rect48}>
-              <View style={styles.rect49}>
-                <Image
-                  style={styles.image8}
-                  source={{ uri: this.state.imgsrc[7] }}
-                />
-                <Text style={styles.text24}>{this.state.imgtxt[7]}</Text>
-                <Text style={styles.text25}>Rating:</Text>
-                <Text style={styles.text26}>{this.state.imgrate[7]}</Text>
-              </View>
-            </View>
-            <View style={styles.rect50}>
-              <View style={styles.rect51}>
-                <Image
-                  style={styles.image9}
-                  source={{ uri: this.state.imgsrc[8] }}
-                />
-                <Text style={styles.text27}>{this.state.imgtxt[8]}</Text>
-                <Text style={styles.text28}>Rating:</Text>
-                <Text style={styles.text29}>{this.state.imgrate[8]}</Text>
-              </View>
-            </View>
-            <View style={styles.rect52}>
-              <View style={styles.rect53}>
-                <Image
-                  style={styles.image10}
-                  source={{ uri: this.state.imgsrc[9] }}
-                />
-                <Text style={styles.text30}>{this.state.imgtxt[9]}</Text>
-                <Text style={styles.text31}>Rating:</Text>
-                <Text style={styles.text32}>{this.state.imgrate[9]}</Text>
-              </View>
-            </View>
-          </View>
+          )}
+          <CupertinoSwitch
+            style={styles.cupertinoSwitch}
+            value={this.state.switch}
+            onValueChange={value => {
+              this.setState({ switch: value });
+            }}
+          />
         </ScrollView>
       </View>
     );
@@ -214,10 +222,10 @@ const styles = StyleSheet.create({
     backgroundColor: "transparent"
   },
   cupertinoSwitch: {
-    top: 109,
+    top: 108,
     left: 299,
     width: 43,
-    height: 21,
+    height: 22,
     position: "absolute"
   },
   text: {
@@ -249,7 +257,7 @@ const styles = StyleSheet.create({
     alignItems: "flex-end",
     flexWrap: "wrap",
     flexDirection: "row",
-    padding: 10
+    padding: 15
   },
   rect11: {
     width: 128,

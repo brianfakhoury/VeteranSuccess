@@ -106,6 +106,9 @@ export default class Untitled3 extends Component {
             style={styles.icon}
             name="account-circle"
             type="MaterialCommunityIcons"
+            onPress={() => {
+              this.props.navigation.push("Login");
+            }}
           />
         </ScrollView>
         <Footer22 style={styles.footer22} navigation={this.props.navigation} />

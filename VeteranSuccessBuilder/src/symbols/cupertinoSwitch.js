@@ -18,6 +18,7 @@ export default class cupertinoSwitch extends Component {
           thumbTintColor="#FFF"
           tintColor="#9E9E9E"
           value={this.props.value ? true : false}
+          onValueChange={this.props.onValueChange}
         />
       </View>
     );
