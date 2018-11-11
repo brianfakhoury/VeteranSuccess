@@ -35,7 +35,6 @@ const styles = StyleSheet.create({
   buttonContent: {
     fontSize: 17,
     fontWeight: "500",
-    fontFamily: "Roboto",
     color: "#fff"
   }
 });

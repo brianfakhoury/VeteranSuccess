@@ -183,9 +183,8 @@ const styles = StyleSheet.create({
     backgroundColor: "transparent",
     fontStyle: "italic",
     fontSize: 90,
-    color: "rgba(0,0,0,1)",
-    left: 0,
-    width: 330
+    color: "rgba(80,80,80,1)",
+    left: 0
   },
   username2: {
     left: "0%",
@@ -198,14 +197,14 @@ const styles = StyleSheet.create({
     overflow: "visible"
   },
   text2: {
-    top: "23.37%",
+    top: "23.4%",
     position: "absolute",
     backgroundColor: "transparent",
     fontSize: 90,
     fontStyle: "italic",
-    color: "rgba(0,0,0,1)",
+    color: "rgba(50,150,210,1)",
     left: "0%",
-    width: 370
+    width: 371
   },
   statusBar: {},
   button1: {

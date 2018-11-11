@@ -94,8 +94,7 @@ const styles = StyleSheet.create({
   content: {
     backgroundColor: "transparent",
     paddingTop: 4,
-    fontSize: 12,
-    fontFamily: "Roboto"
+    fontSize: 12
   },
   buttonWrapper2: {
     flex: 0.2,
@@ -113,7 +112,6 @@ const styles = StyleSheet.create({
     backgroundColor: "transparent",
     paddingTop: 4,
     fontSize: 12,
-    fontFamily: "Roboto",
     color: "#9E9E9E"
   },
   buttonWrapper3: {
@@ -132,7 +130,6 @@ const styles = StyleSheet.create({
     backgroundColor: "transparent",
     paddingTop: 4,
     fontSize: 12,
-    fontFamily: "Roboto",
     color: "#9E9E9E"
   },
   buttonWrapper1: {
@@ -151,7 +148,6 @@ const styles = StyleSheet.create({
     backgroundColor: "transparent",
     paddingTop: 4,
     fontSize: 12,
-    fontFamily: "Roboto",
     color: "#9E9E9E"
   },
   buttonWrapper4: {
@@ -170,7 +166,6 @@ const styles = StyleSheet.create({
     backgroundColor: "transparent",
     paddingTop: 4,
     fontSize: 12,
-    fontFamily: "Roboto",
     color: "#9E9E9E"
   }
 });

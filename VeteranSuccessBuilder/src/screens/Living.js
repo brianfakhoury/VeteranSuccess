@@ -31,7 +31,7 @@ export default class Untitled3 extends Component {
     };
   }
   componentWillMount() {
-    fetch("http://947246ea.ngrok.io/api/v1/gyphy-images/home").then(data => {
+    fetch("http://7d5dab4b.ngrok.io/api/v1/gyphy-images/home").then(data => {
       data.json().then(url => {
         console.log(url);
         this.setState({
@@ -39,7 +39,7 @@ export default class Untitled3 extends Component {
         });
       });
     });
-    fetch("http://947246ea.ngrok.io/api/v1/gyphy-images/car").then(data => {
+    fetch("http://7d5dab4b.ngrok.io/api/v1/gyphy-images/car").then(data => {
       data.json().then(url => {
         console.log(url);
         this.setState({
@@ -72,10 +72,15 @@ export default class Untitled3 extends Component {
         />
         <ScrollView
           style={styles.scrollArea}
-          contentContainerStyle={styles.ScrollView6}
+          contentContainerStyle={styles.ScrollView9}
         >
           <View style={styles.rect4}>
-            <TouchableOpacity style={styles.button2}>
+            <TouchableOpacity
+              style={styles.button2}
+              onPress={() => {
+                this.props.navigation.push("Home");
+              }}
+            >
               <View style={styles.rect5}>
                 <Text style={styles.text2} numberOfLines={2}>
                   A safe, quiet home is essential for a good life experience.
@@ -89,16 +94,17 @@ export default class Untitled3 extends Component {
             <TouchableOpacity style={styles.button3}>
               <View style={styles.rect6}>
                 <Text style={styles.text4} numberOfLines={2}>
-                  A safe, quiet home is essential for a good life experience.
+                  \n A safe, quiet home is essential for a good life
+                  experience.\n{" "}
                 </Text>
                 <Text style={styles.text5} numberOfLines={2}>
-                  Find a good, safe home
+                  \n Find a good, safe home\n{" "}
                 </Text>
                 {this.renderImage(1)}
               </View>
             </TouchableOpacity>
           </View>
-          <Text style={styles.text}>Daily Life</Text>
+          <Text style={styles.text}>Today</Text>
           <Icon
             style={styles.icon}
             name="account-circle"
@@ -122,30 +128,30 @@ const styles = StyleSheet.create({
     top: 740,
     left: 0,
     position: "absolute",
-    height: 50,
+    height: 49,
     width: 375
   },
 
   scrollArea: {
-    top: 50,
+    top: 52,
     left: 0,
 
     position: "absolute",
     overflow: "hidden",
-    height: 689,
-    width: 375
+    height: 688,
+    right: 0
   },
   rect4: {
-    top: 91,
+    top: 90,
     left: 0,
-    right: 0,
-    height: 897.93,
+    right: 1,
+    height: 884.14,
     position: "absolute",
     alignItems: "center",
     justifyContent: "space-between",
     flexDirection: "column",
 
-    overflow: "visible",
+    overflow: "hidden",
     padding: 25
   },
 
@@ -313,16 +319,12 @@ const styles = StyleSheet.create({
     position: "absolute",
     borderRadius: 0
   },
-  ScrollView4: {
-    height: 960,
+  ScrollView8: {
+    height: 1111,
     width: 375
   },
-  ScrollView5: {
-    height: 988.93,
-    width: 375
-  },
-  ScrollView6: {
-    height: 989,
+  ScrollView9: {
+    height: 974.14,
     width: 375
   }
 });

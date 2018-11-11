@@ -5,9 +5,9 @@ import { Center } from "@builderx/utils";
 import {
   View,
   StyleSheet,
-  ScrollView,
   Text,
-  TouchableOpacity
+  TouchableOpacity,
+  ScrollView
 } from "react-native";
 
 export default class Entertainment extends Component {
@@ -15,74 +15,9 @@ export default class Entertainment extends Component {
     return (
       <View style={styles.root}>
         <ScrollView
-          style={styles.scrollArea}
-          contentContainerStyle={styles.ScrollView1}
+          style={styles.scrollArea5}
+          contentContainerStyle={styles.ScrollView8}
         >
-          <ScrollView
-            style={styles.scrollArea2}
-            horizontal={true}
-            contentContainerStyle={styles.ScrollView3}
-          >
-            <View style={styles.rect6} horizontal={true}>
-              <Center vertical>
-                <TouchableOpacity style={styles.button3}>
-                  <View style={styles.rect4}>
-                    <Text style={styles.text6} numberOfLines={2}>
-                      \n \n A safe, quiet home is essential for a good life\n
-                      experience.\n{" "}
-                    </Text>
-                    <Text style={styles.text7} numberOfLines={2}>
-                      \n \n Find a good, safe home\n{" "}
-                    </Text>
-                  </View>
-                </TouchableOpacity>
-              </Center>
-              <Center vertical>
-                <TouchableOpacity style={styles.button5}>
-                  <View style={styles.rect7}>
-                    <Text style={styles.text10} numberOfLines={2}>
-                      \n \n A safe, quiet home is essential for a good life\n
-                      experience.\n{" "}
-                    </Text>
-                    <Text style={styles.text11} numberOfLines={2}>
-                      \n \n Find a good, safe home\n{" "}
-                    </Text>
-                  </View>
-                  <View style={styles.rect8}>
-                    <Text style={styles.text12} numberOfLines={2}>
-                      \n \n A safe, quiet home is essential for a good life\n
-                      experience.\n{" "}
-                    </Text>
-                    <Text style={styles.text13} numberOfLines={2}>
-                      \n \n Find a good, safe home\n{" "}
-                    </Text>
-                  </View>
-                </TouchableOpacity>
-              </Center>
-              <Center vertical>
-                <TouchableOpacity style={styles.button6}>
-                  <View style={styles.rect9}>
-                    <Text style={styles.text14} numberOfLines={2}>
-                      \n \n A safe, quiet home is essential for a good life\n
-                      experience.\n{" "}
-                    </Text>
-                    <Text style={styles.text15} numberOfLines={2}>
-                      \n \n Find a good, safe home\n{" "}
-                    </Text>
-                  </View>
-                  <View style={styles.rect10}>
-                    <Text style={styles.text16} numberOfLines={2}>
-                      \n \n A safe, quiet home is essential for a good life\n
-                      experience.\n{" "}
-                    </Text>
-                    <Text style={styles.text17} numberOfLines={2}>
-                      \n \n Find a good, safe home\n{" "}
-                    </Text>
-                  </View>
-                </TouchableOpacity>
-              </Center>
-            </View>
-          </ScrollView>
           <Text style={styles.text5} numberOfLines={2}>
             Fun Stuff Around You
           </Text>
@@ -91,6 +26,71 @@ export default class Entertainment extends Component {
             name="account-circle"
             type="MaterialCommunityIcons"
           />
+          <View style={styles.rect19} horizontal={true}>
+            <ScrollView
+              style={styles.scrollArea3}
+              horizontal={true}
+              contentContainerStyle={styles.ScrollView7}
+            >
+              <TouchableOpacity style={styles.button5}>
+                <View style={styles.rect21}>
+                  <Text style={styles.text21} numberOfLines={2}>
+                    \n \n A safe, quiet home is essential for a good life\n
+                    experience.\n{" "}
+                  </Text>
+                  <Text style={styles.text22} numberOfLines={2}>
+                    \n \n Find a good, safe home\n{" "}
+                  </Text>
+                </View>
+              </TouchableOpacity>
+              <TouchableOpacity style={styles.button6}>
+                <View style={styles.rect22}>
+                  <Text style={styles.text23} numberOfLines={2}>
+                    \n \n A safe, quiet home is essential for a good life\n
+                    experience.\n{" "}
+                  </Text>
+                  <Text style={styles.text24} numberOfLines={2}>
+                    \n \n Find a good, safe home\n{" "}
+                  </Text>
+                </View>
+              </TouchableOpacity>
+            </ScrollView>
+            <Text style={styles.text25}>Live Music</Text>
+          </View>
+          <View style={styles.rect23}>
+            <ScrollView
+              style={styles.scrollArea4}
+              horizontal={true}
+              contentContainerStyle={{
+                alignItems: "center",
+                justifyContent: "center"
+              }}
+            >
+              <TouchableOpacity style={styles.button7}>
+                <View style={styles.rect24}>
+                  <Text style={styles.text26} numberOfLines={2}>
+                    \n \n \n A safe, quiet home is essential for a good life\n\n
+                    experience.\n{" "}
+                  </Text>
+                  <Text style={styles.text27} numberOfLines={2}>
+                    \n \n \n Find a good, safe home\n{" "}
+                  </Text>
+                </View>
+              </TouchableOpacity>
+              <TouchableOpacity style={styles.button8}>
+                <View style={styles.rect25}>
+                  <Text style={styles.text28} numberOfLines={2}>
+                    \n \n \n A safe, quiet home is essential for a good life\n\n
+                    experience.\n{" "}
+                  </Text>
+                  <Text style={styles.text29} numberOfLines={2}>
+                    \n \n \n Find a good, safe home\n{" "}
+                  </Text>
+                </View>
+              </TouchableOpacity>
+            </ScrollView>
+            <Text style={styles.text30}>Live Music</Text>
+          </View>
         </ScrollView>
         <Footer22 style={styles.footer22} navigation={this.props.navigation} />
       </View>
@@ -102,25 +102,14 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     flex: 1
   },
-  scrollArea: {
+  scrollArea5: {
     top: 50,
     left: 0,
-    width: 375,
-    height: 690,
+
+    height: 684.82,
     position: "absolute",
-    overflow: "hidden"
-  },
-  scrollArea2: {
-    top: 91,
-    left: 0,
-    right: 0,
-    height: 898,
-    position: "absolute",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "space-between",
-    padding: 25,
-    overflow: "visible"
+    overflow: "hidden",
+    right: 0
   },
 
   text5: {
@@ -150,146 +139,78 @@ const styles = StyleSheet.create({
     height: 989,
     width: 375
   },
-  rect6: {
-    top: 40,
-    left: 0,
-    width: 738,
-    height: 430,
-    position: "absolute"
-  },
+
   ScrollView2: {
     height: 470,
     width: 739
   },
-  button3: {
-    width: 310,
-    height: 400,
-    position: "absolute",
-    elevation: 60,
-    backgroundColor: "rgba(255,255,255,1)",
-    opacity: 1,
-    margin: 0,
-    borderRadius: 20,
-    shadowColor: "rgba(206,206,206,1)",
-    shadowOffset: {
-      width: 0,
-      height: 10
-    },
-    shadowOpacity: 1,
-    shadowRadius: 20,
-    overflow: "visible",
-    left: "24%"
-  },
-  rect4: {
-    top: 0,
-    left: 0,
-    width: 310,
-    height: 399,
-    position: "absolute",
-    elevation: 60,
-    backgroundColor: "rgba(255,255,255,1)",
-    opacity: 1,
-    borderRadius: 20,
-    shadowColor: "rgba(206,206,206,1)",
-    shadowOffset: {
-      width: 0,
-      height: 10
-    },
-    shadowOpacity: 1,
-    shadowRadius: 20,
-    overflow: "hidden"
-  },
-  text6: {
-    top: "73.93%",
-    left: 18,
-    width: 220,
-    height: 61,
-    position: "absolute",
-    backgroundColor: "transparent",
-    fontSize: 16,
-    lineHeight: 24,
-    letterSpacing: 0,
-    textAlign: "left"
-  },
-  text7: {
-    top: "53.88%",
-    left: 18,
-    width: 220,
-    height: 70,
-    position: "absolute",
-    backgroundColor: "transparent",
-    fontSize: 32,
-    lineHeight: 32,
-    letterSpacing: 0,
-    textAlign: "left"
-  },
-  button5: {
-    width: 310,
-    height: 401,
-    position: "absolute",
-    elevation: 60,
-    backgroundColor: "rgba(255,255,255,1)",
-    opacity: 1,
-    margin: 0,
-    borderRadius: 20,
-    shadowColor: "rgba(206,206,206,1)",
-    shadowOffset: {
-      width: 0,
-      height: 10
-    },
-    shadowOpacity: 1,
-    shadowRadius: 20,
-    overflow: "visible",
-    left: "70.46%"
-  },
-  rect7: {
-    top: 0,
-    left: 0,
-    width: 310,
-    height: 399,
-    position: "absolute",
-    elevation: 60,
-    backgroundColor: "rgba(255,255,255,1)",
-    opacity: 1,
-    borderRadius: 20,
-    shadowColor: "rgba(206,206,206,1)",
-    shadowOffset: {
-      width: 0,
-      height: 10
-    },
-    shadowOpacity: 1,
-    shadowRadius: 20,
-    overflow: "hidden"
-  },
-  text10: {
-    top: "73.93%",
-    left: 18,
-    width: 220,
-    height: 61,
-    position: "absolute",
-    backgroundColor: "transparent",
-    fontSize: 16,
-    lineHeight: 24,
-    letterSpacing: 0,
-    textAlign: "left"
-  },
-  text11: {
-    top: "53.88%",
-    left: 18,
-    width: 220,
-    height: 70,
-    position: "absolute",
-    backgroundColor: "transparent",
-    fontSize: 32,
-    lineHeight: 32,
-    letterSpacing: 0,
-    textAlign: "left"
-  },
+
   ScrollView3: {
     height: 899,
     width: 738
   },
-  rect8: {
+  rect19: {
+    top: 130,
+    left: 0,
+
+    height: 489,
+    position: "absolute",
+    flexDirection: "row",
+    padding: 0,
+    overflow: "visible",
+    backgroundColor: "rgba(255,255,255,1)",
+    opacity: 1,
+    right: 0
+  },
+
+  ScrollView4: {
+    alignItems: "center",
+    justifyContent: "flex-start",
+    height: 479,
+    width: 657
+  },
+
+  ScrollView5: {
+    height: 1069,
+    width: 670
+  },
+  ScrollView6: {
+    width: 657,
+    height: 479,
+    alignItems: "center",
+    justifyContent: "flex-start"
+  },
+
+  scrollArea3: {
+    left: 0,
+    width: 375,
+    height: 479,
+    position: "absolute",
+    flexDirection: "row",
+    backgroundColor: "rgba(255,255,255,1)",
+    opacity: 1,
+    padding: 0,
+    overflow: "visible",
+    top: "-2.04%"
+  },
+  button5: {
+    width: 309,
+    height: 400,
+    elevation: 60,
+    backgroundColor: "rgba(255,255,255,1)",
+    opacity: 1,
+    margin: 13,
+    borderRadius: 20,
+    shadowColor: "rgba(206,206,206,1)",
+    shadowOffset: {
+      width: 0,
+      height: 10
+    },
+    shadowOpacity: 1,
+    shadowRadius: 20,
+    overflow: "visible"
+  },
+  rect21: {
     top: 0,
     left: 0,
     width: 310,
@@ -308,7 +229,7 @@ const styles = StyleSheet.create({
     shadowRadius: 20,
     overflow: "hidden"
   },
-  text12: {
+  text21: {
     top: "73.93%",
     left: 18,
     width: 220,
@@ -320,7 +241,7 @@ const styles = StyleSheet.create({
     letterSpacing: 0,
     textAlign: "left"
   },
-  text13: {
+  text22: {
     top: "53.88%",
     left: 18,
     width: 220,
@@ -333,14 +254,12 @@ const styles = StyleSheet.create({
     textAlign: "left"
   },
   button6: {
-    left: "-23.31%",
-    width: 310,
-    height: 401,
-    position: "absolute",
+    width: 309,
+    height: 400,
     elevation: 60,
     backgroundColor: "rgba(255,255,255,1)",
     opacity: 1,
-    margin: 0,
+    margin: 13,
     borderRadius: 20,
     shadowColor: "rgba(206,206,206,1)",
     shadowOffset: {
@@ -351,7 +270,7 @@ const styles = StyleSheet.create({
     shadowRadius: 20,
     overflow: "visible"
   },
-  rect9: {
+  rect22: {
     top: 0,
     left: 0,
     width: 310,
@@ -370,7 +289,7 @@ const styles = StyleSheet.create({
     shadowRadius: 20,
     overflow: "hidden"
   },
-  text14: {
+  text23: {
     top: "73.93%",
     left: 18,
     width: 220,
@@ -382,7 +301,7 @@ const styles = StyleSheet.create({
     letterSpacing: 0,
     textAlign: "left"
   },
-  text15: {
+  text24: {
     top: "53.88%",
     left: 18,
     width: 220,
@@ -394,7 +313,61 @@ const styles = StyleSheet.create({
     letterSpacing: 0,
     textAlign: "left"
   },
-  rect10: {
+  text25: {
+    top: 0,
+    left: 40,
+    width: 70,
+    height: 20,
+    position: "absolute",
+    backgroundColor: "transparent",
+    color: "rgba(74,144,226,1)"
+  },
+  ScrollView7: {
+    justifyContent: "center",
+    alignItems: "center"
+  },
+  rect23: {
+    top: 620,
+    left: 0,
+    right: 0,
+    height: 491,
+    position: "absolute",
+    flexDirection: "row",
+    backgroundColor: "rgba(255,255,255,1)",
+    opacity: 1,
+    padding: 0,
+    overflow: "visible"
+  },
+  scrollArea4: {
+    top: "-2.04%",
+    left: 0,
+    width: 375,
+    height: 479,
+    position: "absolute",
+    flexDirection: "row",
+    backgroundColor: "rgba(255,255,255,1)",
+    opacity: 1,
+    padding: 0,
+    overflow: "visible"
+  },
+  button7: {
+    width: 309,
+    height: 400,
+    elevation: 60,
+    backgroundColor: "rgba(255,255,255,1)",
+    opacity: 1,
+    margin: 13,
+    borderRadius: 20,
+    shadowColor: "rgba(206,206,206,1)",
+    shadowOffset: {
+      width: 0,
+      height: 10
+    },
+    shadowOpacity: 1,
+    shadowRadius: 20,
+    overflow: "visible"
+  },
+  rect24: {
     top: 0,
     left: 0,
     width: 310,
@@ -413,7 +386,7 @@ const styles = StyleSheet.create({
     shadowRadius: 20,
     overflow: "hidden"
   },
-  text16: {
+  text26: {
     top: "73.93%",
     left: 18,
     width: 220,
@@ -425,7 +398,7 @@ const styles = StyleSheet.create({
     letterSpacing: 0,
     textAlign: "left"
   },
-  text17: {
+  text27: {
     top: "53.88%",
     left: 18,
     width: 220,
@@ -436,5 +409,78 @@ const styles = StyleSheet.create({
     lineHeight: 32,
     letterSpacing: 0,
     textAlign: "left"
+  },
+  button8: {
+    width: 309,
+    height: 400,
+    elevation: 60,
+    backgroundColor: "rgba(255,255,255,1)",
+    opacity: 1,
+    margin: 13,
+    borderRadius: 20,
+    shadowColor: "rgba(206,206,206,1)",
+    shadowOffset: {
+      width: 0,
+      height: 10
+    },
+    shadowOpacity: 1,
+    shadowRadius: 20,
+    overflow: "visible"
+  },
+  rect25: {
+    top: 0,
+    left: 0,
+    width: 310,
+    height: 399,
+    position: "absolute",
+    elevation: 60,
+    backgroundColor: "rgba(255,255,255,1)",
+    opacity: 1,
+    borderRadius: 20,
+    shadowColor: "rgba(206,206,206,1)",
+    shadowOffset: {
+      width: 0,
+      height: 10
+    },
+    shadowOpacity: 1,
+    shadowRadius: 20,
+    overflow: "hidden"
+  },
+  text28: {
+    top: "73.93%",
+    left: 18,
+    width: 220,
+    height: 61,
+    position: "absolute",
+    backgroundColor: "transparent",
+    fontSize: 16,
+    lineHeight: 24,
+    letterSpacing: 0,
+    textAlign: "left"
+  },
+  text29: {
+    top: "53.88%",
+    left: 18,
+    width: 220,
+    height: 70,
+    position: "absolute",
+    backgroundColor: "transparent",
+    fontSize: 32,
+    lineHeight: 32,
+    letterSpacing: 0,
+    textAlign: "left"
+  },
+  text30: {
+    top: 0,
+    left: 40,
+    width: 70,
+    height: 20,
+    position: "absolute",
+    backgroundColor: "transparent",
+    color: "rgba(74,144,226,1)"
+  },
+  ScrollView8: {
+    height: 1111,
+    width: 375
   }
 });
