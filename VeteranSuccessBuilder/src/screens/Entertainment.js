@@ -49,20 +49,22 @@ export default class Entertainment extends Component {
         });
       }
     );
-    fetch("http://550af917.ngrok.io/api/v1/gyphy-images/singer").then(data => {
-      data.json().then(url => {
-        console.log(url);
-        this.setState({
-          imgsrc: [
-            this.state.imgsrc[0],
-            this.state.imgsrc[1],
-            url,
-            this.state.imgsrc[3]
-          ]
+    fetch("https://www.veterans4success.org/api/v1/gyphy-images/singer").then(
+      data => {
+        data.json().then(url => {
+          console.log(url);
+          this.setState({
+            imgsrc: [
+              this.state.imgsrc[0],
+              this.state.imgsrc[1],
+              url,
+              this.state.imgsrc[3]
+            ]
+          });
         });
-      });
-    });
-    fetch("http://550af917.ngrok.io/api/v1/gyphy-images/festival").then(
+      }
+    );
+    fetch("https://www.veterans4success.org/api/v1/gyphy-images/festival").then(
       data => {
         data.json().then(url => {
           console.log(url);

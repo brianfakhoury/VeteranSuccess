@@ -30,22 +30,26 @@ export default class Untitled3 extends Component {
     };
   }
   componentWillMount() {
-    fetch("http://550af917.ngrok.io/api/v1/gyphy-images/bank").then(data => {
-      data.json().then(url => {
-        console.log(url);
-        this.setState({
-          imgsrc: [url, this.state.imgsrc[1]]
+    fetch("https://www.veterans4success.org/api/v1/gyphy-images/bank").then(
+      data => {
+        data.json().then(url => {
+          console.log(url);
+          this.setState({
+            imgsrc: [url, this.state.imgsrc[1]]
+          });
         });
-      });
-    });
-    fetch("http://550af917.ngrok.io/api/v1/gyphy-images/money").then(data => {
-      data.json().then(url => {
-        console.log(url);
-        this.setState({
-          imgsrc: [this.state.imgsrc[0], url]
+      }
+    );
+    fetch("https://www.veterans4success.org/api/v1/gyphy-images/money").then(
+      data => {
+        data.json().then(url => {
+          console.log(url);
+          this.setState({
+            imgsrc: [this.state.imgsrc[0], url]
+          });
         });
-      });
-    });
+      }
+    );
   }
 
   renderImage(i) {
