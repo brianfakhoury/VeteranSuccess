@@ -25,33 +25,35 @@ export default class Car extends Component {
     };
   }
   loadInfo() {
-    fetch("http://550af917.ngrok.io/api/v1/vehicle-stats/best").then(data => {
-      data.json().then(res => {
-        res.forEach((car, index) => {
-          let search = `https://www.googleapis.com/customsearch/v1?q=${car.Manufacturer +
-            car.Model +
-            car.Model_Year +
-            " car"}&searchType=image&key=AIzaSyDQLocpovH5cjEXGIFrIuNKUVQEx9s2Yi4&cx=002897967468687864836:olrpqlhe_1s`;
-          fetch(search).then(data1 => {
-            data1.json().then(res1 => {
-              let link = res1.items[0].link;
-              let links = this.state.imgsrc;
-              links[index] = link;
-              let txts = this.state.imgtxt;
-              txts[index] = car.Manufacturer + car.Model + car.Model_Year;
-              let rates = this.state.imgrate;
-              rates[index] =
-                "" + (car.City_Conventional_Fuel + car.Hwy_Conventional_Fuel);
-              this.setState({
-                imgsrc: links,
-                imgtxt: txts,
-                imgrate: rates
+    fetch("https://www.veterans4success.org/api/v1/vehicle-stats/best").then(
+      data => {
+        data.json().then(res => {
+          res.forEach((car, index) => {
+            let search = `https://www.googleapis.com/customsearch/v1?q=${car.Manufacturer +
+              car.Model +
+              car.Model_Year +
+              " car"}&searchType=image&key=AIzaSyDQLocpovH5cjEXGIFrIuNKUVQEx9s2Yi4&cx=002897967468687864836:olrpqlhe_1s`;
+            fetch(search).then(data1 => {
+              data1.json().then(res1 => {
+                let link = res1.items[0].link;
+                let links = this.state.imgsrc;
+                links[index] = link;
+                let txts = this.state.imgtxt;
+                txts[index] = car.Manufacturer + car.Model + car.Model_Year;
+                let rates = this.state.imgrate;
+                rates[index] =
+                  "" + (car.City_Conventional_Fuel + car.Hwy_Conventional_Fuel);
+                this.setState({
+                  imgsrc: links,
+                  imgtxt: txts,
+                  imgrate: rates
+                });
               });
             });
           });
         });
-      });
-    });
+      }
+    );
   }
   componentDidMount() {
     let binded = this.loadInfo.bind(this);
