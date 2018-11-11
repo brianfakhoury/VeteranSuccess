@@ -53,7 +53,12 @@ export default class footer22 extends Component {
           <Icon style={styles.icon3} name="poll" />
           <Text style={styles.content3}>Career</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.buttonWrapper1}>
+        <TouchableOpacity
+          style={styles.buttonWrapper1}
+          onPress={() => {
+            this.props.navigation.push("Entertainment");
+          }}
+        >
           <Icon
             style={styles.icon1}
             name="popcorn"

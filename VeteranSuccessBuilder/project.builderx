@@ -2,7 +2,8 @@
     "artboards": [
         "/src/screens/Living.js",
         "/src/screens/Login.js",
-        "/src/screens/SignUp.js"
+        "/src/screens/SignUp.js",
+        "/src/screens/Entertainment.js"
     ],
     "symbols": [
         "/src/symbols/Buttonlogin.js",
@@ -17,19 +18,10 @@
         "/src/symbols/button1.js",
         "/src/symbols/footer2.js",
         "/src/symbols/footer21.js",
-        "/src/symbols/footer1.js",
         "/src/symbols/header5.js",
         "/src/symbols/header51.js",
-        "/src/symbols/list1.js",
-        "/src/symbols/list2.js",
-        "/src/symbols/searchBar3.js",
-        "/src/symbols/searchBar31.js",
-        "/src/symbols/Card.js",
-        "/src/symbols/Scroll.js",
         "/src/symbols/footer22.js",
-        "/src/symbols/list7.js",
-        "/src/symbols/list71.js",
-        "/src/symbols/list11.js"
+        "/src/symbols/materialMap.js"
     ],
     "assets": [],
     "defaultArtboardDirectory": "/src/screens",
@@ -37,7 +29,7 @@
     "defaultAssetDirectory": "/src/assets",
     "deviceName": "iPhone X",
     "deviceOrientation": "portrait",
-    "basePath": "/Users/brian/Desktop/VeteranSuccess",
+    "basePath": "/Users/brian/Desktop/bostonhacks18/VeteranSuccessBuilder",
     "tempPath": "/var/folders/hp/hygfn5h94vx0pk62jw07f2vm0000gn/T/BuilderH4KfXh8",
     "useStylesheet": true,
     "rulers": {},

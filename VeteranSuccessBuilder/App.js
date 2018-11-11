@@ -11,6 +11,8 @@ import { store } from "./src/_helpers";
 
 import Living from "./src/screens/Living";
 
+import Entertainment from "./src/screens/Entertainment";
+
 import { StackNavigator, DrawerNavigator } from "react-navigation";
 let user = [
   {
@@ -29,6 +31,9 @@ const DrawerNavigation = DrawerNavigator({
   },
   SignUp: {
     screen: SignUp
+  },
+  Entertainment: {
+    screen: Entertainment
   }
 });
 const StackNavigation = StackNavigator(
@@ -44,6 +49,9 @@ const StackNavigation = StackNavigator(
     },
     SignUp: {
       screen: SignUp
+    },
+    Entertainment: {
+      screen: Entertainment
     }
   },
   {
