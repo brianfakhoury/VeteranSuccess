@@ -70,15 +70,12 @@ export default class Untitled3 extends Component {
           style={styles.statusBar}
           animated={false}
         />
-        <ScrollView
-          style={styles.scrollArea}
-          contentContainerStyle={styles.ScrollView9}
-        >
+        <ScrollView style={styles.scrollArea}>
           <View style={styles.rect4}>
             <TouchableOpacity
               style={styles.button2}
               onPress={() => {
-                this.props.navigation.push("Home");
+                this.props.navigation.push("Car");
               }}
             >
               <View style={styles.rect5}>
@@ -133,13 +130,13 @@ const styles = StyleSheet.create({
   },
 
   scrollArea: {
-    top: 52,
+    top: 50,
     left: 0,
 
     position: "absolute",
     overflow: "hidden",
-    height: 688,
-    right: 0
+    height: 690,
+    width: 374
   },
   rect4: {
     top: 90,

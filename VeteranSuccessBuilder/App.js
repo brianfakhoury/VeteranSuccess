@@ -13,6 +13,8 @@ import Living from "./src/screens/Living";
 
 import Entertainment from "./src/screens/Entertainment";
 
+import Car from "./src/screens/Car";
+import House from "./src/screens/House";
 import { StackNavigator, DrawerNavigator } from "react-navigation";
 let user = [
   {
@@ -22,6 +24,9 @@ let user = [
     email: "Test"
   }
 ];
+
+console.disableYellowBox = true;
+
 const DrawerNavigation = DrawerNavigator({
   Living: {
     screen: Living
@@ -34,6 +39,12 @@ const DrawerNavigation = DrawerNavigator({
   },
   Entertainment: {
     screen: Entertainment
+  },
+  Car: {
+    screen: Car
+  },
+  House: {
+    screen: House
   }
 });
 const StackNavigation = StackNavigator(
@@ -52,6 +63,12 @@ const StackNavigation = StackNavigator(
     },
     Entertainment: {
       screen: Entertainment
+    },
+    Car: {
+      screen: Car
+    },
+    House: {
+      screen: House
     }
   },
   {

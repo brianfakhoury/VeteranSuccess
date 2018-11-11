@@ -3,7 +3,9 @@
         "/src/screens/Living.js",
         "/src/screens/Login.js",
         "/src/screens/SignUp.js",
-        "/src/screens/Entertainment.js"
+        "/src/screens/Entertainment.js",
+        "/src/screens/Car.js",
+        "/src/screens/House.js"
     ],
     "symbols": [
         "/src/symbols/Buttonlogin.js",
@@ -21,7 +23,8 @@
         "/src/symbols/header5.js",
         "/src/symbols/header51.js",
         "/src/symbols/footer22.js",
-        "/src/symbols/materialMap.js"
+        "/src/symbols/materialMap.js",
+        "/src/symbols/cupertinoSwitch.js"
     ],
     "assets": [],
     "defaultArtboardDirectory": "/src/screens",
@@ -33,7 +36,5 @@
     "tempPath": "/var/folders/hp/hygfn5h94vx0pk62jw07f2vm0000gn/T/BuilderH4KfXh8",
     "useStylesheet": true,
     "rulers": {},
-    "missingFonts": [
-        "Roboto"
-    ]
+    "missingFonts": []
 }

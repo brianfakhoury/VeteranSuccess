@@ -35,22 +35,22 @@ export default class Entertainment extends Component {
               <TouchableOpacity style={styles.button5}>
                 <View style={styles.rect21}>
                   <Text style={styles.text21} numberOfLines={2}>
-                    \n \n A safe, quiet home is essential for a good life\n
-                    experience.\n{" "}
+                    A safe, quiet home is essential for a good life\n
+                    experience.
                   </Text>
                   <Text style={styles.text22} numberOfLines={2}>
-                    \n \n Find a good, safe home\n{" "}
+                    Find a good, safe home
                   </Text>
                 </View>
               </TouchableOpacity>
               <TouchableOpacity style={styles.button6}>
                 <View style={styles.rect22}>
                   <Text style={styles.text23} numberOfLines={2}>
-                    \n \n A safe, quiet home is essential for a good life\n
-                    experience.\n{" "}
+                    A safe, quiet home is essential for a good life\n
+                    experience.
                   </Text>
                   <Text style={styles.text24} numberOfLines={2}>
-                    \n \n Find a good, safe home\n{" "}
+                    Find a good, safe home
                   </Text>
                 </View>
               </TouchableOpacity>
