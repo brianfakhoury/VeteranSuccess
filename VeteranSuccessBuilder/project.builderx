@@ -1,0 +1,47 @@
+{
+    "artboards": [
+        "/src/screens/Living.js",
+        "/src/screens/Login.js",
+        "/src/screens/SignUp.js"
+    ],
+    "symbols": [
+        "/src/symbols/Buttonlogin.js",
+        "/src/symbols/Login.js",
+        "/src/symbols/Password.js",
+        "/src/symbols/Signin.js",
+        "/src/symbols/UntitledSymbol.js",
+        "/src/symbols/UntitledSymbol1.js",
+        "/src/symbols/Username.js",
+        "/src/symbols/button10.js",
+        "/src/symbols/card1.js",
+        "/src/symbols/button1.js",
+        "/src/symbols/footer2.js",
+        "/src/symbols/footer21.js",
+        "/src/symbols/footer1.js",
+        "/src/symbols/header5.js",
+        "/src/symbols/header51.js",
+        "/src/symbols/list1.js",
+        "/src/symbols/list2.js",
+        "/src/symbols/searchBar3.js",
+        "/src/symbols/searchBar31.js",
+        "/src/symbols/Card.js",
+        "/src/symbols/Scroll.js",
+        "/src/symbols/footer22.js",
+        "/src/symbols/list7.js",
+        "/src/symbols/list71.js",
+        "/src/symbols/list11.js"
+    ],
+    "assets": [],
+    "defaultArtboardDirectory": "/src/screens",
+    "defaultSymbolDirectory": "/src/symbols",
+    "defaultAssetDirectory": "/src/assets",
+    "deviceName": "iPhone X",
+    "deviceOrientation": "portrait",
+    "basePath": "/Users/brian/Desktop/VeteranSuccess",
+    "tempPath": "/var/folders/hp/hygfn5h94vx0pk62jw07f2vm0000gn/T/BuilderH4KfXh8",
+    "useStylesheet": true,
+    "rulers": {},
+    "missingFonts": [
+        "Roboto"
+    ]
+}
